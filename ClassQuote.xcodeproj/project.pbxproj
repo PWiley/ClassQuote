@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA00ECF8230AA6D900C831B8 /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA00ECF7230AA6D900C831B8 /* QuoteService.swift */; };
 		DA3C39122306A0DC006F3DF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C39112306A0DC006F3DF6 /* AppDelegate.swift */; };
 		DA3C39142306A0DC006F3DF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C39132306A0DC006F3DF6 /* ViewController.swift */; };
 		DA3C39172306A0DC006F3DF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3C39152306A0DC006F3DF6 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA00ECF7230AA6D900C831B8 /* QuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteService.swift; sourceTree = "<group>"; };
 		DA3C390E2306A0DB006F3DF6 /* ClassQuote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassQuote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3C39112306A0DC006F3DF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA3C39132306A0DC006F3DF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 		DA3C39232306A0E8006F3DF6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DA00ECF7230AA6D900C831B8 /* QuoteService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA3C39142306A0DC006F3DF6 /* ViewController.swift in Sources */,
+				DA00ECF8230AA6D900C831B8 /* QuoteService.swift in Sources */,
 				DA3C39122306A0DC006F3DF6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
