@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ClassQuote" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uHX-Dw-uiC">
+                                <rect key="frame" x="16" y="67" width="343" height="323"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="323" id="TaO-d8-j3Y"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WpC-pw-Gp1" userLabel="Quote Label">
+                                <rect key="frame" x="16" y="67" width="343" height="323"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jean L 'auteur" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emf-OX-0Ea" userLabel="Author Label">
+                                <rect key="frame" x="168" y="398" width="191" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="Fva-PB-6zK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05D-pr-bqw">
+                                <rect key="frame" x="16" y="752" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.92557770013809204" green="0.51286613941192627" blue="0.31365931034088135" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="SWg-jn-f0b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="New quote"/>
+                                <connections>
+                                    <action selector="tappedNewQuoteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sCJ-32-aNn"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="z6u-G9-3j5">
+                                <rect key="frame" x="177" y="499" width="21" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WpC-pw-Gp1" firstAttribute="top" secondItem="uHX-Dw-uiC" secondAttribute="top" id="Aph-9s-mbk"/>
+                            <constraint firstItem="emf-OX-0Ea" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="168" id="Dc0-Ka-Cjj"/>
+                            <constraint firstItem="emf-OX-0Ea" firstAttribute="top" secondItem="WpC-pw-Gp1" secondAttribute="bottom" constant="8" symbolic="YES" id="ITu-ex-R81"/>
+                            <constraint firstItem="WpC-pw-Gp1" firstAttribute="trailing" secondItem="emf-OX-0Ea" secondAttribute="trailing" id="LhV-4y-xSc"/>
+                            <constraint firstItem="uHX-Dw-uiC" firstAttribute="leading" secondItem="WpC-pw-Gp1" secondAttribute="leading" id="XBf-gg-wnG"/>
+                            <constraint firstItem="uHX-Dw-uiC" firstAttribute="centerX" secondItem="z6u-G9-3j5" secondAttribute="centerX" id="XJ6-uZ-HhI"/>
+                            <constraint firstItem="z6u-G9-3j5" firstAttribute="centerX" secondItem="05D-pr-bqw" secondAttribute="centerX" id="cNx-hH-KKz"/>
+                            <constraint firstItem="uHX-Dw-uiC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="dA2-2q-chI"/>
+                            <constraint firstAttribute="bottom" secondItem="05D-pr-bqw" secondAttribute="bottom" constant="20" symbolic="YES" id="ewx-0D-bRT"/>
+                            <constraint firstItem="z6u-G9-3j5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="177" id="gdb-3A-rTq"/>
+                            <constraint firstItem="emf-OX-0Ea" firstAttribute="top" secondItem="uHX-Dw-uiC" secondAttribute="bottom" constant="8" symbolic="YES" id="hMB-85-Re7"/>
+                            <constraint firstItem="emf-OX-0Ea" firstAttribute="trailing" secondItem="05D-pr-bqw" secondAttribute="trailing" id="mEj-Zh-msz"/>
+                            <constraint firstItem="z6u-G9-3j5" firstAttribute="top" secondItem="emf-OX-0Ea" secondAttribute="bottom" constant="62" id="qX3-VT-s1a"/>
+                            <constraint firstItem="WpC-pw-Gp1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="v3m-Bm-i7b"/>
+                            <constraint firstItem="uHX-Dw-uiC" firstAttribute="trailing" secondItem="WpC-pw-Gp1" secondAttribute="trailing" id="w9z-lv-ixH"/>
+                            <constraint firstItem="WpC-pw-Gp1" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wss-df-NNR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="z6u-G9-3j5" id="4fK-Rk-3XU"/>
+                        <outlet property="authorLabel" destination="emf-OX-0Ea" id="jh6-Xt-z0n"/>
+                        <outlet property="imageView" destination="uHX-Dw-uiC" id="CzP-ex-ams"/>
+                        <outlet property="newQuoteButton" destination="05D-pr-bqw" id="lMz-nq-bJB"/>
+                        <outlet property="quoteLabel" destination="WpC-pw-Gp1" id="57G-Gh-gT5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.40000000000001" y="128.18590704647679"/>
+        </scene>
+    </scenes>
+</document>
